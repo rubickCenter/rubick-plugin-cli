@@ -1,6 +1,6 @@
 {
   "name": "rubick-plugin-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "rubick plugin cli",
   "main": "index.js",
   "bin": {
