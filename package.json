@@ -1,6 +1,6 @@
 {
   "name": "rubick-plugin-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "rubick plugin cli",
   "main": "index.js",
   "bin": {
@@ -11,7 +11,9 @@
   },
   "files": [
     "bin",
-    "lib"
+    "lib",
+    "templates",
+    "assets"
   ],
   "author": {
     "name": "再难也要坚持",
