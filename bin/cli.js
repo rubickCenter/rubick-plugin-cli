@@ -6,9 +6,9 @@ const chalk = require('chalk');
 
 
 program
-  .command('create <app-name>')
-  .description('create a new project')
-  .option('-f, --force', 'overwrite target directory if it exist') // 是否强制创建，当文件夹已经存在
+  .command('create <plugin-name>')
+  .description('create a new plugin')
+  .option('-f, --force', 'overwrite target directory if it exists') // 是否强制创建，当文件夹已经存在
   .action((name, options) => {
     // 在 create.js 中执行创建任务
     require('../lib/create.js')(name, options)
@@ -28,7 +28,7 @@ program
 // 配置 ui 命令
 program
   .command('ui')
-  .description('start add open roc-cli ui')
+  .description('start add open rubick-plugin-cli ui')
   .option('-p, --port <port>', 'Port used for the UI Server')
   .action((option) => {
     console.log(option)
@@ -41,14 +41,14 @@ program
 
 program
   .on('--help', () => {
-    console.log('\r\n' + figlet.textSync('zhurong', {
+    console.log('\r\n' + figlet.textSync('Rubick', {
       font: 'Ghost',
       horizontalLayout: 'default',
       verticalLayout: 'default',
       width: 80,
       whitespaceBreak: true
     }));
-    console.log(`\r\nRun ${chalk.cyan(`zr <command> --help`)} for detailed usage of given command\r\n`)
+    console.log(`\r\nRun ${chalk.cyan(`rubick <command> --help`)} for detailed usage of given command\r\n`)
   })
 
 // 解析用户执行命令传入参数

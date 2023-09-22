@@ -1,0 +1,24 @@
+{
+  "name": "<%= pluginName %>",
+  "pluginName": "<%= pluginName %>",
+  "version": "<%= version %>",
+  "description": "<%= pluginDesc %>",
+  "main": "index.html",
+  "preload": "preload.js",
+  "logo": "https://pic1.zhimg.com/80/v2-c4b9ea27fde09f7e985a5fc77d922680_720w.png",
+  "pluginType": "<%= pluginType %>",
+  "features": [
+    {
+      "code": "testing",
+      "explain": "测试插件关键词",
+      "cmds": [
+        "测试插件",
+        "test"
+      ]
+    }
+  ],
+  "author": "<%= author %>",
+  "license": "ISC",
+  "development": "http://localhost:4001",
+  "homePage": "https://gitee.com/rubick-center/rubick-plugin-demo/raw/master/README.md"
+}

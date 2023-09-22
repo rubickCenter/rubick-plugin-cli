@@ -1,10 +1,10 @@
 {
-  "name": "zhurong-cli",
-  "version": "1.0.4",
-  "description": "",
+  "name": "rubick-plugin-cli",
+  "version": "1.0.0",
+  "description": "rubick plugin cli",
   "main": "index.js",
   "bin": {
-    "zr": "./bin/cli.js"
+    "rubick": "./bin/cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,23 +14,25 @@
     "lib"
   ],
   "author": {
-    "name": "T-Roc",
-    "email": "lxp_work@163.com"
+    "name": "再难也要坚持",
+    "email": "1129921824@qq.com"
   },
   "keywords": [
-    "zhurong-cli",
-    "zr",
+    "rubick-plugin-cli",
+    "rubick",
     "脚手架"
   ],
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.21.1",
-    "chalk": "^4.1.1",
-    "commander": "^7.2.0",
+    "axios": "^1.5.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "cross-spawn": "^7.0.3",
     "download-git-repo": "^3.0.2",
-    "figlet": "^1.5.0",
-    "fs-extra": "^10.0.0",
-    "inquirer": "^8.0.0",
-    "ora": "^5.4.0"
+    "ejs": "^3.1.9",
+    "figlet": "^1.6.0",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1"
   }
 }
